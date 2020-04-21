@@ -103,8 +103,10 @@ class CatagoryButton extends StatelessWidget {
 }
 
 class LeftText extends StatelessWidget {
+  Color color;
+
   String text;
-  LeftText({this.text});
+  LeftText({this.color, this.text});
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -116,6 +118,7 @@ class LeftText extends StatelessWidget {
           text,
           textAlign: TextAlign.left,
           style: TextStyle(
+            color: color,
             fontSize: 25,
           ),
         ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mehendidesign/widgets/detail_page_items.dart';
 import 'package:mehendidesign/widgets/home_page_item.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mehendidesign/widgets/wallpaper_item.dart';
 
 class DetailDesign extends StatelessWidget {
   @override
@@ -18,7 +19,7 @@ class DetailDesign extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: <Widget>[
-                ImageFront(path: 'images/largm.jpg'),
+                ImageFront(path: 'images/gem.jpg'),
                 LikedRow(name: 'Tecno - Gril', isLiked: true),
                 SizedBox(height: 20),
                 ImageFront(path: 'images/alone.jpg'),

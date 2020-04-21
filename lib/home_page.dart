@@ -13,25 +13,28 @@ class HomePage extends StatelessWidget {
       body: Container(
           child: SingleChildScrollView(
         child: Column(children: <Widget>[
-          Container(
-              margin: EdgeInsets.only(top: 0),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Colors.blueAccent,
-                image: DecorationImage(
-                  image: AssetImage('images/med.jpg'),
-                  fit: BoxFit.fill,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+                margin: EdgeInsets.only(top: 20),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.blueAccent,
+                  image: DecorationImage(
+                    image: AssetImage('images/med.jpg'),
+                    fit: BoxFit.fill,
+                  ),
                 ),
-              ),
-              height: MediaQuery.of(context).size.height * 0.36,
-              width: MediaQuery.of(context).size.width * 1.0,
-              child: Column(children: <Widget>[
-                TopRow(
-                  color: Colors.white,
-                ),
-                SearchBar(),
-              ])),
-          LeftText(text: 'Categories'),
+                height: MediaQuery.of(context).size.height * 0.36,
+                width: MediaQuery.of(context).size.width * 1.0,
+                child: Column(children: <Widget>[
+                  TopRow(
+                    color: Colors.white,
+                  ),
+                  SearchBar(),
+                ])),
+          ),
+          LeftText(text: 'Categories', color: Colors.red),
           SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
